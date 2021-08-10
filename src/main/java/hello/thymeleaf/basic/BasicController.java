@@ -110,6 +110,20 @@ public class BasicController {
         addUsers(model);
         return "basic/each";
     }
+    //조건문
+    @GetMapping("/condition")
+    public String condition(Model model){
+        addUsers(model);
+        return "basic/condition";
+    }
+
+    @GetMapping("/comments")
+    public String comments(Model model){
+        model.addAttribute("data", "Spring!");
+        return "basic/comments";
+    }
+
+    //주석
 
     private void addUsers(Model model){
         List<User>list = new ArrayList<>();
