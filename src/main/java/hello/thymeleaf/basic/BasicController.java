@@ -108,6 +108,12 @@ public class BasicController {
         return "basic/operation";
     }
 
+    //속성값 설정
+    @GetMapping("/attribute")
+    public String attribute(){
+        return "basic/attribute";
+    }
+
 
 
 
